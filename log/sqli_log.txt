@@ -1,0 +1,474 @@
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: No SQL Injection detected in the URL
+
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: No SQL Injection detected in the HTTP body
+
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: SQL Injection detected in the URL: /auth/signin?username=achitaphol&password=test
+
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: No SQL Injection detected in the URL
+
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: No SQL Injection detected in the URL
+
+<module 'datetime' from 'C:\\Users\\chickenfriedwithmayo\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\datetime.py'>: No SQL Injection detected in the URL
+
+2024-11-01 19:03:30.099260: No SQL Injection detected in the URL
+
+2024-11-01 19:03:30.177280: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:03:30.193276: No SQL Injection detected in the URL
+
+2024-11-01 19:03:30.200281: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:03:49.157340: No SQL Injection detected in the URL
+
+2024-11-01 19:03:49.159689: SQL Injection detected in the HTTP body: {"username":"testlatest","password":"testlatest"}
+
+2024-11-01 19:03:52.445709: SQL Injection detected in the URL: /auth/signup?username=testlatest&password=testlatest
+
+2024-11-01 19:03:55.815704: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:03:55.839726: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:03:55.848687: No SQL Injection detected in the URL
+
+2024-11-01 19:03:55.853684: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:04:13.010814: No SQL Injection detected in the URL
+
+2024-11-01 19:04:13.023822: No SQL Injection detected in the URL
+
+2024-11-01 19:04:13.028818: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:04:46.805523: No SQL Injection detected in the URL
+
+2024-11-01 19:04:46.807526: SQL Injection detected in the HTTP body: {"username":"testcreate","password":"testcreate"}
+
+2024-11-01 19:04:50.502985: SQL Injection detected in the URL: /auth/signup?username=testcreate&password=testcreate
+
+2024-11-01 19:04:53.930164: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:04:53.944160: No SQL Injection detected in the URL
+
+2024-11-01 19:04:53.950648: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:04:53.962192: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:12.100755: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.509051: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:28.525051: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.537051: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.551050: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.571053: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.590055: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.616052: No SQL Injection detected in the URL
+
+2024-11-01 19:06:28.956055: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:29.206058: No SQL Injection detected in the URL
+
+2024-11-01 19:06:29.282053: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:29.336052: No SQL Injection detected in the URL
+
+2024-11-01 19:06:29.612053: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:29.677052: No SQL Injection detected in the URL
+
+2024-11-01 19:06:29.906053: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:30.067053: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:30.076053: No SQL Injection detected in the URL
+
+2024-11-01 19:06:30.195050: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:30.209055: No SQL Injection detected in the URL
+
+2024-11-01 19:06:30.240055: SQL Injection detected in the HTTP body: // global var that holds: 0- if ctrl key is not pressed 1- if ctrl key is pressed var ctrlKeyHistory = 0;  /**   * Allows moving around inputs/select by Ctrl+arrows   *   * @param {object} event data   */ function onKeyDownArrowsHandler(event) {   var e = event || window.event;   var o = e.srcElement || e.target;   if (!o) {     return;   }   if (o.tagName !== 'TEXTAREA' && o.tagName !== 'INPUT' && o.tagName !== 'SELECT') {     return;   }   if (e.which !== 17 && e.which !== 37 && e.which !== 38 && e.which !== 39 && e.which !== 40) {     return;   }   if (!o.id) {     return;   }   if (e.type === 'keyup') {     if (e.which === 17) {       ctrlKeyHistory = 0;     }     return;   } else if (e.type === 'keydown') {     if (e.which === 17) {       ctrlKeyHistory = 1;     }   }   if (ctrlKeyHistory !== 1) {     return;   }   e.preventDefault();   var pos = o.id.split('_');   if (pos[0] !== 'field' || typeof pos[2] === 'undefined') {     return;   }   var x = pos[2];   var y = pos[1];   switch (e.keyCode) {     case 38:       // up       y--;       break;     case 40:       // down       y++;       break;     case 37:       // left       x--;       break;     case 39:       // right       x++;       break;     default:       return;   }   var id = 'field_' + y + '_' + x;   var nO = document.getElementById(id);   if (!nO) {     id = 'field_' + y + '_' + x + '_0';     nO = document.getElementById(id);   }    // skip non existent fields   if (!nO) {     return;   }   nO.focus();   if (nO.tagName !== 'SELECT') {     nO.select();   }   e.returnValue = false; } AJAX.registerTeardown('keyhandler.js', function () {   $(document).off('keydown keyup', '#table_columns');   $(document).off('keydown keyup', 'table.insertRowTable'); }); AJAX.registerOnload('keyhandler.js', function () {   $(document).on('keydown keyup', '#table_columns', function (event) {     onKeyDownArrowsHandler(event.originalEvent);   });   $(document).on('keydown keyup', 'table.insertRowTable', function (event) {     onKeyDownArrowsHandler(event.originalEvent);   }); });
+
+2024-11-01 19:06:33.623373: No SQL Injection detected in the URL
+
+2024-11-01 19:06:33.639334: No SQL Injection detected in the URL
+
+2024-11-01 19:06:33.656337: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:33.669436: No SQL Injection detected in the URL
+
+2024-11-01 19:06:33.731082: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:33.876776: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:33.882792: No SQL Injection detected in the URL
+
+2024-11-01 19:06:33.891841: No SQL Injection detected in the URL
+
+2024-11-01 19:06:34.091868: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:34.130862: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:34.141863: No SQL Injection detected in the URL
+
+2024-11-01 19:06:34.148867: No SQL Injection detected in the URL
+
+2024-11-01 19:06:34.930075: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:34.936088: No SQL Injection detected in the URL
+
+2024-11-01 19:06:34.947119: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:34.954135: No SQL Injection detected in the URL
+
+2024-11-01 19:06:34.969860: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:34.980809: No SQL Injection detected in the URL
+
+2024-11-01 19:06:35.001807: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:35.009860: No SQL Injection detected in the URL
+
+2024-11-01 19:06:35.064550: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:35.330548: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:35.377547: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:35.434547: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.139550: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.146427: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.154427: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.163425: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.173427: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.231764: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.333014: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.349075: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.751995: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.760172: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.772172: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.780203: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.787218: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.795203: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.809177: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.878202: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.885174: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.895082: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:36.901096: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.908099: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.916093: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.923100: No SQL Injection detected in the URL
+
+2024-11-01 19:06:36.992093: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.078093: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.114122: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.327080: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.360099: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.366571: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.375591: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.381585: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.393585: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.398610: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.442049: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.447048: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.453046: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.483225: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.492087: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.520086: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.609086: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.614110: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.623113: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.654983: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.661743: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.667755: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.694964: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.704980: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.716982: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.732739: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.740740: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.746740: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.868737: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:37.874737: No SQL Injection detected in the URL
+
+2024-11-01 19:06:37.886770: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.176556: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.187538: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.192531: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.199531: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.207651: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.213529: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.222532: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.230533: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.240533: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.250535: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.262531: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.272529: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.280528: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.287530: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.295530: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.305536: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.324532: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.335532: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.345538: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.373530: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.397532: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.424534: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.447532: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.473976: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.487995: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.521989: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.546987: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.570987: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.584995: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.595990: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.605989: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.627988: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.652999: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.663990: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.686078: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.702040: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.741987: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.747990: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.757988: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.763997: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.772991: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.777989: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.786986: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.793990: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.803986: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.808985: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.820985: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.826989: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.836986: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.843987: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.852990: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.858987: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.865988: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.874992: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.880991: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.891989: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.897990: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.908990: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.917451: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.926445: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.933458: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.941444: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.947446: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.959379: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.968433: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.975395: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:39.981390: No SQL Injection detected in the URL
+
+2024-11-01 19:06:39.991396: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.002394: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.009397: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.010395: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.019394: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.020395: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.027392: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.029397: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.039396: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.044393: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.057395: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.062393: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.073766: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.114032: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.128034: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.130030: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.207031: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.345031: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.359032: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.364033: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.386074: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.429033: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.505029: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.550029: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.606029: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.615034: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.624033: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:40.632037: No SQL Injection detected in the URL
+
+2024-11-01 19:06:40.644033: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:06:57.778317: No SQL Injection detected in the URL
+
+2024-11-01 19:06:57.789311: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:08.956884: No SQL Injection detected in the URL
+
+2024-11-01 19:07:08.984878: No SQL Injection detected in the URL
+
+2024-11-01 19:07:09.001874: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:25.877687: No SQL Injection detected in the URL
+
+2024-11-01 19:07:25.880687: SQL Injection detected in the HTTP body: {"username":"test","password":"123456"}
+
+2024-11-01 19:07:29.145635: SQL Injection detected in the URL: /auth/signin?username=test&password=123456
+
+2024-11-01 19:07:32.455372: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:32.477370: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:32.490374: No SQL Injection detected in the URL
+
+2024-11-01 19:07:32.508373: No SQL Injection detected in the URL
+
+2024-11-01 19:07:32.524372: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:32.553375: No SQL Injection detected in the HTTP body
+
+2024-11-01 19:07:32.565375: No SQL Injection detected in the URL
+
+2024-11-01 19:07:32.587374: No SQL Injection detected in the URL
+
+2024-11-01 19:07:32.597379: No SQL Injection detected in the HTTP body
+
