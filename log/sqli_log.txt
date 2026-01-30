@@ -472,3 +472,367 @@
 
 2024-11-01 19:07:32.597379: No SQL Injection detected in the HTTP body
 
+2025-04-26 12:12:37.586024: No SQL Injection detected in the URL
+
+2025-04-26 12:12:37.590834: No SQL Injection detected in the URL
+
+2025-04-26 12:12:39.840636: No SQL Injection detected in the URL
+
+2025-04-26 12:12:39.845129: No SQL Injection detected in the URL
+
+2025-04-26 12:13:07.946213: No SQL Injection detected in the URL
+
+2025-04-26 12:13:07.947268: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:13:07.950838: No SQL Injection detected in the URL
+
+2025-04-26 12:13:07.951191: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:13:23.764408: No SQL Injection detected in the URL
+
+2025-04-26 12:13:23.765278: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:13:23.770646: No SQL Injection detected in the URL
+
+2025-04-26 12:13:23.771389: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:14:09.933556: No SQL Injection detected in the URL
+
+2025-04-26 12:14:09.937147: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:14:09.946278: No SQL Injection detected in the URL
+
+2025-04-26 12:14:09.946881: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:15:06.156891: No SQL Injection detected in the URL
+
+2025-04-26 12:15:06.162271: No SQL Injection detected in the URL
+
+2025-04-26 12:15:11.929403: No SQL Injection detected in the URL
+
+2025-04-26 12:15:11.930660: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:15:11.937421: No SQL Injection detected in the URL
+
+2025-04-26 12:15:11.938247: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:16:25.206417: No SQL Injection detected in the URL
+
+2025-04-26 12:16:25.214739: No SQL Injection detected in the URL
+
+2025-04-26 12:16:25.215928: No SQL Injection detected in the HTTP body
+
+2025-04-26 12:18:32.597393: No SQL Injection in URI
+2025-04-26 12:18:32.602531: No SQL Injection in URI
+2025-04-26 12:19:30.819123: No SQL Injection in URI
+2025-04-26 12:19:30.824979: No SQL Injection in URI
+2025-04-26 12:19:45.628301: No SQL Injection in URI
+2025-04-26 12:19:45.629387: No SQL Injection in Body
+2025-04-26 12:19:45.635547: No SQL Injection in URI
+2025-04-26 12:19:45.636719: No SQL Injection in Body
+2025-04-26 12:22:15.447571: No SQL Injection in URI
+2025-04-26 12:22:15.453430: No SQL Injection in URI
+2025-04-26 12:22:25.234090: No SQL Injection in URI
+2025-04-26 12:22:25.234851: No SQL Injection in Body
+2025-04-26 12:22:25.240500: No SQL Injection in URI
+2025-04-26 12:22:25.241209: No SQL Injection in Body
+2025-04-26 12:24:44.510479: No SQL Injection in URI
+2025-04-26 12:24:44.516715: No SQL Injection in URI
+2025-04-26 12:25:01.069546: No SQL Injection in URI
+2025-04-26 12:25:01.070460: No SQL Injection in Body
+2025-04-26 12:25:01.075936: No SQL Injection in URI
+2025-04-26 12:25:01.076634: No SQL Injection in Body
+2025-04-26 12:26:40.444086: SQL Injection DETECTED in URI.
+
+2025-04-26 12:26:40.449156: SQL Injection DETECTED in URI.
+
+2025-04-26 12:26:53.995266: No SQL Injection in URI.
+
+2025-04-26 12:26:54.000659: No SQL Injection in URI.
+
+2025-04-26 12:27:09.298915: No SQL Injection in URI.
+
+2025-04-26 12:27:09.299778: No SQL Injection in HTTP Body.
+
+2025-04-26 12:27:09.304605: No SQL Injection in URI.
+
+2025-04-26 12:27:09.305153: No SQL Injection in HTTP Body.
+
+2025-04-26 12:30:05.486667: SQL Injection DETECTED in URI.
+
+2025-04-26 12:30:05.487601: No SQL Injection in HTTP Body.
+
+2025-04-26 12:30:05.492644: SQL Injection DETECTED in URI.
+
+2025-04-26 12:30:05.493365: No SQL Injection in HTTP Body.
+
+2025-04-26 12:30:14.518803: SQL Injection DETECTED in URI.
+
+2025-04-26 12:30:14.519471: No SQL Injection in HTTP Body.
+
+2025-04-26 12:30:14.523547: SQL Injection DETECTED in URI.
+
+2025-04-26 12:30:14.523987: No SQL Injection in HTTP Body.
+
+2025-04-26 12:30:25.561369: No SQL Injection in URI.
+
+2025-04-26 12:30:25.562468: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 12:30:25.568163: No SQL Injection in URI.
+
+2025-04-26 12:30:25.568915: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 12:31:57.044457: SQL Injection DETECTED in URI.
+
+2025-04-26 12:31:57.045519: No SQL Injection in HTTP Body.
+
+2025-04-26 12:31:57.050280: SQL Injection DETECTED in URI.
+
+2025-04-26 12:31:57.050876: No SQL Injection in HTTP Body.
+
+2025-04-26 12:32:39.210316: SQL Injection DETECTED in URI.
+
+2025-04-26 12:32:39.211339: No SQL Injection in HTTP Body.
+
+2025-04-26 12:32:39.215791: SQL Injection DETECTED in URI.
+
+2025-04-26 12:32:39.216539: No SQL Injection in HTTP Body.
+
+2025-04-26 12:32:59.532779: No SQL Injection in URI.
+
+2025-04-26 12:32:59.533667: No SQL Injection in HTTP Body.
+
+2025-04-26 12:32:59.538601: No SQL Injection in URI.
+
+2025-04-26 12:32:59.539240: No SQL Injection in HTTP Body.
+
+2025-04-26 12:33:05.052929: No SQL Injection in URI.
+
+2025-04-26 12:33:05.054150: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 12:33:05.060565: No SQL Injection in URI.
+
+2025-04-26 12:33:05.061861: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 12:35:17.148990: No SQL Injection in URI.
+
+2025-04-26 12:35:17.150386: No SQL Injection in HTTP Body.
+
+2025-04-26 12:35:17.155869: No SQL Injection in URI.
+
+2025-04-26 12:35:17.156757: No SQL Injection in HTTP Body.
+
+2025-04-26 12:35:22.666565: SQL Injection DETECTED in URI.
+
+2025-04-26 12:35:22.671827: SQL Injection DETECTED in URI.
+
+2025-04-26 12:35:41.238556: No SQL Injection in URI.
+
+2025-04-26 12:35:41.239689: No SQL Injection in HTTP Body.
+
+2025-04-26 12:35:41.245795: No SQL Injection in URI.
+
+2025-04-26 12:35:41.246658: No SQL Injection in HTTP Body.
+
+2025-04-26 12:35:42.996228: No SQL Injection in URI.
+
+2025-04-26 12:35:42.997498: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 12:35:43.003260: No SQL Injection in URI.
+
+2025-04-26 12:35:43.004446: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:24:53.032893: No SQL Injection in URI.
+
+2025-04-26 13:24:53.039244: No SQL Injection in URI.
+
+2025-04-26 13:25:21.637661: SQL Injection DETECTED in URI.
+
+2025-04-26 13:25:21.643438: SQL Injection DETECTED in URI.
+
+2025-04-26 13:26:05.057935: No SQL Injection in URI.
+
+2025-04-26 13:26:05.060687: No SQL Injection in URI.
+
+2025-04-26 13:26:30.656102: No SQL Injection in URI.
+
+2025-04-26 13:26:30.661927: No SQL Injection in URI.
+
+2025-04-26 13:27:08.294738: No SQL Injection in URI.
+
+2025-04-26 13:27:08.300652: No SQL Injection in URI.
+
+2025-04-26 13:27:31.378632: No SQL Injection in URI.
+
+2025-04-26 13:27:31.379929: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:27:31.385969: No SQL Injection in URI.
+
+2025-04-26 13:27:31.386947: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:27:45.933794: No SQL Injection in URI.
+
+2025-04-26 13:27:45.934815: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:27:45.940132: No SQL Injection in URI.
+
+2025-04-26 13:27:45.940974: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:27:54.966283: No SQL Injection in URI.
+
+2025-04-26 13:27:54.967452: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:27:54.973278: No SQL Injection in URI.
+
+2025-04-26 13:27:54.974438: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:28:43.761429: No SQL Injection in URI.
+
+2025-04-26 13:28:43.762422: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:28:43.766624: No SQL Injection in URI.
+
+2025-04-26 13:28:43.767314: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:30:32.309308: No SQL Injection in URI.
+
+2025-04-26 13:30:32.310544: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:30:32.316252: No SQL Injection in URI.
+
+2025-04-26 13:31:30.289126: No SQL Injection in URI.
+
+2025-04-26 13:31:30.290305: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:31:30.295663: No SQL Injection in URI.
+
+2025-04-26 13:32:09.546915: No SQL Injection in URI.
+
+2025-04-26 13:32:09.548096: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:32:09.553984: No SQL Injection in URI.
+
+2025-04-26 13:32:41.168747: No SQL Injection in URI.
+
+2025-04-26 13:32:41.169628: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 13:32:41.173668: No SQL Injection in URI.
+
+2025-04-26 18:30:32.022543: No SQL Injection in URI.
+
+2025-04-26 18:30:32.024157: No SQL Injection in HTTP Body.
+
+2025-04-26 18:30:32.033580: No SQL Injection in URI.
+
+2025-04-26 18:30:32.035812: No SQL Injection in HTTP Body.
+
+2025-04-26 18:30:41.043726: No SQL Injection in URI.
+
+2025-04-26 18:30:41.044643: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 18:30:41.049358: No SQL Injection in URI.
+
+2025-04-26 18:30:47.572197: No SQL Injection in URI.
+
+2025-04-26 18:30:47.573418: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 18:30:47.580790: No SQL Injection in URI.
+
+2025-04-26 18:31:03.135252: No SQL Injection in URI.
+
+2025-04-26 18:31:03.136267: No SQL Injection in HTTP Body.
+
+2025-04-26 18:31:03.141851: No SQL Injection in URI.
+
+2025-04-26 18:31:03.142504: No SQL Injection in HTTP Body.
+
+2025-04-26 18:53:56.671141: No SQL Injection in URI.
+
+2025-04-26 18:53:56.672985: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 18:53:56.678739: No SQL Injection in URI.
+
+2025-04-26 18:54:19.002829: No SQL Injection in URI.
+
+2025-04-26 18:54:19.003635: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 18:54:19.010415: No SQL Injection in URI.
+
+2025-04-26 18:54:22.520617: No SQL Injection in URI.
+
+2025-04-26 18:54:22.521795: No SQL Injection in HTTP Body.
+
+2025-04-26 18:54:22.532927: No SQL Injection in URI.
+
+2025-04-26 18:54:22.534043: No SQL Injection in HTTP Body.
+
+2025-04-26 18:57:44.858737: No SQL Injection in URI.
+
+2025-04-26 18:57:44.859830: No SQL Injection in HTTP Body.
+
+2025-04-26 18:57:44.866518: No SQL Injection in URI.
+
+2025-04-26 18:57:45.108383: No SQL Injection in URI.
+
+2025-04-26 18:57:45.109474: No SQL Injection in HTTP Body.
+
+2025-04-26 18:57:45.115918: No SQL Injection in URI.
+
+2025-04-26 18:59:34.553089: No SQL Injection in URI.
+
+2025-04-26 18:59:34.554363: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 18:59:34.561621: No SQL Injection in URI.
+
+2025-04-26 19:17:19.294431: No SQL Injection in URI.
+
+2025-04-26 19:17:19.296388: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 19:17:19.302584: No SQL Injection in URI.
+
+2025-04-26 19:27:58.603665: No SQL Injection in URI.
+
+2025-04-26 19:27:58.605890: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 19:27:58.612136: No SQL Injection in URI.
+
+2025-04-26 19:28:45.035581: SQL Injection DETECTED in URI.
+
+2025-04-26 19:28:45.046144: SQL Injection DETECTED in URI.
+
+2025-04-26 19:40:03.239527: No SQL Injection in URI.
+
+2025-04-26 19:40:03.241530: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 19:40:03.247285: No SQL Injection in URI.
+
+2025-04-26 19:40:26.827655: No SQL Injection in URI.
+
+2025-04-26 19:40:26.828336: No SQL Injection in HTTP Body.
+
+2025-04-26 19:40:26.835315: No SQL Injection in URI.
+
+2025-04-26 19:40:26.836011: No SQL Injection in HTTP Body.
+
+2025-04-26 19:40:36.620157: SQL Injection DETECTED in URI.
+
+2025-04-26 19:40:36.630358: SQL Injection DETECTED in URI.
+
+2025-04-26 19:49:12.308990: No SQL Injection in URI.
+
+2025-04-26 19:49:12.310916: SQL Injection DETECTED in HTTP Body.
+
+2025-04-26 19:49:12.316437: No SQL Injection in URI.
+
+2025-04-26 19:49:32.386855: No SQL Injection in URI.
+
+2025-04-26 19:49:32.387907: No SQL Injection in HTTP Body.
+
+2025-04-26 19:49:32.393402: No SQL Injection in URI.
+
+2025-04-26 19:49:32.394034: No SQL Injection in HTTP Body.
+
+2025-04-26 19:49:37.656671: SQL Injection DETECTED in URI.
+
+2025-04-26 19:49:37.666311: SQL Injection DETECTED in URI.
+

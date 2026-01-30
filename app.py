@@ -1,10 +1,8 @@
-from consolemenu import ConsoleMenu
-from consolemenu.items import FunctionItem
 from modules.portscan import PortScanDetector
-from modules.sqli import SQLi
+from modules.sqli import SQLiDetector
 
-# sqli_detector = SQLi()
-# sqli_detector.run()
+sqli_detector = SQLiDetector()
+sqli_detector.run()
 
 # portscan_detector = PortScanDetector()
 # portscan_detector.run()

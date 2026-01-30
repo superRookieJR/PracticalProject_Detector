@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="abyss">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Command Executor</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1 text-center">
+    <p class="mb-5 text-3xl font-bold">WHY <b class="text-primary">HACK</b> ME</p>
+    <div class="join">
+      <div>
+        <label class="input input-primary validator join-item">
+          <input id="sqlInput" type="text" placeholder="Input SQL Command" required />
+        </label>
+      </div>
+      <button class="btn btn-primary join-item" onclick="executeCommand()">Execute</button>
+    </div>
+    <!-- Here is the result section -->
+    <div id="result" class="mt-5 text-left max-w-md mx-auto"></div>
+  </div>
+
+  <script>
+    async function executeCommand() {
+      const command = document.getElementById('sqlInput').value;
+      const resultDiv = document.getElementById('result');
+
+      try {
+        const res = await fetch('/execute', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ command }),
+        });
+
+        const data = await res.json();
+
+        if (data.error) {
+          resultDiv.innerHTML = `<div class="text-error">Error: ${data.error}</div>`;
+        } else {
+          resultDiv.innerHTML = `
+            <div class="text-success font-bold mb-2">Executed Successfully!</div>
+            <pre class="bg-base-200 p-3 rounded-md overflow-x-auto">${JSON.stringify(data.results, null, 2)}</pre>
+          `;
+        }
+      } catch (error) {
+        resultDiv.innerHTML = `<div class="text-error">Fetch error: ${error.message}</div>`;
+      }
+    }
+  </script>
+</body>
+</html>
